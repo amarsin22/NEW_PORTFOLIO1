@@ -9,19 +9,23 @@ const Analytics = () => {
     trackPageView(location.pathname);
     
     // Track user engagement
-    trackUserEngagement();
+    const cleanupEngagement = trackUserEngagement();
     
     // Track scroll depth
-    trackScrollDepth();
+    const cleanupScroll = trackScrollDepth();
     
     // Track clicks
-    trackClicks();
+    const cleanupClicks = trackClicks();
     
     // Track time on page
     const startTime = Date.now();
+    
     return () => {
       const timeSpent = Date.now() - startTime;
       trackTimeOnPage(location.pathname, timeSpent);
+      cleanupEngagement();
+      cleanupScroll();
+      cleanupClicks();
     };
   }, [location]);
 
@@ -55,10 +59,10 @@ const Analytics = () => {
     };
 
     // Debounced engagement tracking
-    let timeout: NodeJS.Timeout;
+    let timeout: number;
     const debouncedEngagement = () => {
       clearTimeout(timeout);
-      timeout = setTimeout(engagementTracker, 1000);
+      timeout = window.setTimeout(engagementTracker, 1000);
     };
 
     events.forEach(event => {
@@ -69,6 +73,7 @@ const Analytics = () => {
       events.forEach(event => {
         window.removeEventListener(event, debouncedEngagement);
       });
+      clearTimeout(timeout);
     };
   };
 
@@ -228,7 +233,7 @@ const Analytics = () => {
 
   // Send queued analytics periodically (optional - for future backend integration)
   useEffect(() => {
-    const interval = setInterval(() => {
+    const interval = window.setInterval(() => {
       const queue = JSON.parse(localStorage.getItem('portfolio_analytics_queue') || '[]');
       if (queue.length > 0) {
         // For now, just clear old data to prevent overflow
@@ -239,7 +244,7 @@ const Analytics = () => {
       }
     }, 60000); // Every 60 seconds
 
-    return () => clearInterval(interval);
+    return () => window.clearInterval(interval);
   }, []);
 
   return null; // This is a hidden component
