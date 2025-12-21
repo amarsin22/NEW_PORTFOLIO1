@@ -64,8 +64,8 @@ export const portfolioData = {
         "One-click reply generation"
       ],
       metrics: "Reduces email writing time by 60%",
-      github: "#",
-      live: "#",
+      github: "https://github.com/amarsin22",
+      live: "https://ai-email-responder1-gappfekpnjczhdc6zj6dj3p.streamlit.app/",
       aiExplanation: "Uses GPT-4o-mini for natural language understanding and generation. The system analyzes email context, tone, and intent to generate appropriate responses."
     },
     {
@@ -81,8 +81,8 @@ export const portfolioData = {
         "Smart reminders and updates"
       ],
       metrics: "Zero learning curve for new users",
-      github: "#",
-      live: "#",
+      github: "https://github.com/amarsin22",
+      live: "https://github.com/amarsin22/n8n-workflows",
       aiExplanation: "Combines LangChain for NLP with n8n workflow automation. Understands natural language commands like 'Add meeting with John tomorrow at 3pm' and updates Google Sheets automatically."
     },
     {
@@ -98,8 +98,8 @@ export const portfolioData = {
         "7-day forecast with AI insights"
       ],
       metrics: "Reduced user search effort by 40%",
-      github: "#",
-      live: "#",
+      github: "https://github.com/amarsin22",
+      live: "https://ai-weather-mood-dashboard-new.vercel.app/",
       aiExplanation: "Integrates OpenWeatherMap API with custom AI logic to suggest activities based on weather conditions and user mood patterns."
     }
   ],
