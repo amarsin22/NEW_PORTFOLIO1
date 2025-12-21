@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# 🌟 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **my personal portfolio website** — a responsive and modern web application built with **React**, **TypeScript**, and **Vite**. This project showcases my skills, experience, and projects in a clean, interactive format.
 
-Currently, two official plugins are available:
+🔗 Live Demo: # 🌟 Personal Portfolio Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to **my personal portfolio website** — a responsive and modern web application built with **React**, **TypeScript**, and **Vite**. This project showcases my skills, experience, and projects in a clean, interactive format.
 
-## React Compiler
+🔗 Live Demo: https://porfolio-a7p8.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 About the Project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This portfolio is designed to present:
+- 🧑‍💻 About Me section
+- 💼 Projects and accomplishments
+- 📫 Contact information
+- 📱 Responsive layout for all screen sizes
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+It’s a perfect representation of my technical and design skills as a developer.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Built With
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Technology | Description |
+|------------|-------------|
+| **React** | UI library for building user interfaces |
+| **TypeScript** | Static type-checking for safer code |
+| **Vite** | Fast frontend build tooling |
+| **Tailwind CSS** | Utility-first CSS for styling |
+| **ESLint** | Code quality and consistency |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📁 Project Structure
+
+
+
+---
+
+## 🚀 About the Project
+
+This portfolio is designed to present:
+- 🧑‍💻 About Me section
+- 💼 Projects and accomplishments
+- 📫 Contact information
+- 📱 Responsive layout for all screen sizes
+
+It’s a perfect representation of my technical and design skills as a developer.
+
+---
+
+## 🛠️ Built With
+
+| Technology | Description |
+|------------|-------------|
+| **React** | UI library for building user interfaces |
+| **TypeScript** | Static type-checking for safer code |
+| **Vite** | Fast frontend build tooling |
+| **Tailwind CSS** | Utility-first CSS for styling |
+| **ESLint** | Code quality and consistency |
+
+---
+
+## 📁 Project Structure
+
+├── public/
+│ └── assets/ # Static assets and images
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page views
+│ ├── styles/ # Custom styles
+│ └── main.tsx # App entry point
+├── .env # Environment variables
+├── index.html # App HTML template
+├── package.json # Dependencies and scripts
+├── tailwind.config.js # Tailwind configuration
+├── tsconfig.json # TypeScript configuration
+└── vite.config.ts # Vite configuration
+
+
+---
+
+## 📌 Features
+
+✔ Fully responsive UI  
+✔ Smooth navigation  
+✔ Project showcase with links  
+✔ Clean code and modular structure  
+✔ Configured with TypeScript & Tailwind CSS
+
+---
+
+## 🛠 Installation & Setup
+
+To run this project locally:
+
+1. **Clone the repository**
+
+
