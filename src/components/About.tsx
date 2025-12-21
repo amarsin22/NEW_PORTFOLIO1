@@ -42,14 +42,14 @@ const About = () => {
               
               {/* Floating badges */}
               <div className="flex flex-wrap justify-center gap-2 sm:gap-3 lg:gap-4 mt-6">
-                {['React', 'Node.js', 'OpenAI', 'LangChain'].map((tech, idx) => (
+                {['React', 'Node.js', 'OpenAI', 'LangChain'].map((tech, index) => (
                   <motion.div
                     key={tech}
                     initial={{ y: 0 }}
                     animate={{ y: [0, -8, 0] }}
                     transition={{
                       duration: 2,
-                      delay: idx * 0.5,
+                      delay: index * 0.5,
                       repeat: Infinity,
                       repeatType: "reverse"
                     }}
@@ -94,8 +94,8 @@ const About = () => {
                   "Interactive React frontends",
                   "Database design and optimization",
                   "Production deployment and DevOps"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start">
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary-500 rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
                     <span className="text-sm sm:text-base">{item}</span>
                   </li>
@@ -109,9 +109,9 @@ const About = () => {
                 Engineering Strengths
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                {strengths.map((strength, idx) => (
+                {strengths.map((strength, index) => (
                   <div
-                    key={idx}
+                    key={index}
                     className="p-3 sm:p-4 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-lg"
                   >
                     <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">{strength}</div>
@@ -126,7 +126,7 @@ const About = () => {
                 { label: "Projects", value: "3", sub: "AI-powered" },
                 { label: "Experience", value: "1+", sub: "years" },
                 { label: "Technologies", value: "15+", sub: "mastered" }
-              ].map((stat, idx) => (
+              ].map((stat) => (
                 <div key={stat.label} className="text-center p-3 sm:p-4 bg-white dark:bg-gray-800 rounded-xl">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary-600 dark:text-primary-400">
                     {stat.value}
