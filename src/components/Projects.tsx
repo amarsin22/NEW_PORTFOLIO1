@@ -138,7 +138,7 @@ const Projects = () => {
               { label: "APIs Integrated", value: "5+", icon: "🔌" },
               { label: "Lines of Code", value: "10K+", icon: "💻" },
               { label: "User Impact", value: "40%+", icon: "🚀" }
-            ].map((stat, index) => (
+            ].map((stat) => ( // Removed idx parameter since it's not used
               <div key={stat.label} className="text-center">
                 <div className="text-3xl sm:text-4xl mb-2">{stat.icon}</div>
                 <div className="text-2xl sm:text-3xl font-bold text-primary-600 dark:text-primary-400 mb-1">
