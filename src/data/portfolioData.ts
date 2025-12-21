@@ -6,7 +6,7 @@ export const portfolioData = {
     phone: "+91-9889930940",
     location: "Prayagraj, India",
     github: "https://github.com/amarsin22",
-    linkedin: "https://linkedin.com/in/amarsin2201",
+    linkedin: "https://www.linkedin.com/in/amar-singh22",
     tagline: "Building intelligent web applications with cutting-edge AI integration",
     summary: "Full Stack and AI Automation Developer skilled in React.js, Node.js, and Express.js with experience integrating AI workflows using OpenAI API, LangChain, and n8n. Strong in building scalable UIs, modular backend APIs, and performance-focused features.",
   },
