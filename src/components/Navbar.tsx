@@ -89,33 +89,14 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
               )
             ))}
             
-            {/* Dark Mode Toggle */}
-            <button
-              onClick={toggleDarkMode}
-              className="ml-2 p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-            >
-              {darkMode ? (
-                <Sun size={20} className="text-yellow-500" />
-              ) : (
-                <Moon size={20} className="text-gray-700 dark:text-gray-300" />
-              )}
-            </button>
+            {/* Dark Mode Toggle - REMOVED VISUAL BUTTON BUT FUNCTIONALITY REMAINS */}
+            {/* The dark mode functionality still exists but there's no button to trigger it */}
+            {/* You can trigger it programmatically or through other means */}
           </div>
 
           {/* Mobile menu button */}
           <div className="flex lg:hidden items-center space-x-2">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-              aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-            >
-              {darkMode ? (
-                <Sun size={20} className="text-yellow-500" />
-              ) : (
-                <Moon size={20} className="text-gray-700 dark:text-gray-300" />
-              )}
-            </button>
+            {/* Dark Mode Toggle - REMOVED VISUAL BUTTON BUT FUNCTIONALITY REMAINS */}
             <button 
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"

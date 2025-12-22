@@ -12,31 +12,51 @@ import AnalyticsDashboard from './components/AnalyticsDashboard';
 
 function Home() {
   const [darkMode, setDarkMode] = useState(() => {
-    // Check if dark mode is enabled
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('darkMode');
-      if (saved !== null) {
-        return saved === 'true';
-      }
-      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Check on client side only
+    if (typeof window === 'undefined') return false;
+    
+    const saved = localStorage.getItem('darkMode');
+    if (saved !== null) {
+      return saved === 'true';
     }
-    return false;
+    
+    // Check system preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
-  // Update HTML class when darkMode changes
+  // Apply theme when darkMode changes
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      document.documentElement.style.colorScheme = 'dark';
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.style.colorScheme = 'light';
     }
+    
     // Save preference
     localStorage.setItem('darkMode', darkMode.toString());
   }, [darkMode]);
 
+  // Listen for system preference changes (only when no user preference is saved)
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    const handleChange = (e: MediaQueryListEvent) => {
+      // Only update if user hasn't saved a preference
+      if (!localStorage.getItem('darkMode')) {
+        setDarkMode(e.matches);
+      }
+    };
+    
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <div className="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        {/* Pass the props if your Navbar component still expects them */}
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Hero />
         <About />
