@@ -204,7 +204,7 @@ const Contact = () => {
                   >
                     <Linkedin size={24} />
                   </a>
-                  <a href="https://drive.google.com/file/d/1DrkyXEUmYQmtBHWV93qnWwLPIlbKcYlJ/view?usp=sharing">
+                  <a href="https://drive.google.com/file/d/1fk-pCbsu8UoXr5fmrUawWGnQvf6ZDn2_/view?usp=sharing">
                   <button 
                     className="p-3 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors"
                     title="Download Resume"
