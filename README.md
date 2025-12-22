@@ -6,7 +6,7 @@ Welcome to **my personal portfolio website** — a responsive and modern web app
 
 Welcome to **my personal portfolio website** — a responsive and modern web application built with **React**, **TypeScript**, and **Vite**. This project showcases my skills, experience, and projects in a clean, interactive format.
 
-🔗 Live Demo: https://porfolio-a7p8.vercel.app/
+🔗 Live Demo: https://new-portfolio-1-98x5.vercel.app/
 
 ---
 
