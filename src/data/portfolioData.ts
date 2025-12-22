@@ -101,7 +101,86 @@ export const portfolioData = {
       github: "https://github.com/amarsin22",
       live: "https://ai-weather-mood-dashboard-new.vercel.app/",
       aiExplanation: "Integrates OpenWeatherMap API with custom AI logic to suggest activities based on weather conditions and user mood patterns."
-    }
+    },
+    {
+  id: 4,
+  title: "PhonePe-Style Expense Tracker",
+  description: "A modern expense-tracking web app inspired by PhonePe UI to manage daily income and expenses.",
+  longDescription:
+    "Developed a PhonePe-style expense tracker using React and Vite that allows users to add, categorize, and monitor daily expenses with real-time balance updates and persistent storage.",
+  technologies: [
+    "React.js",
+    "Vite",
+    "JavaScript",
+    "Tailwind CSS",
+    "Local Storage",
+    "Vercel"
+  ],
+  features: [
+    "Add and categorize income and expenses",
+    "Real-time balance and expense summary",
+    "Clean PhonePe-inspired UI design",
+    "Persistent data using browser local storage",
+    "Fully responsive across devices"
+  ],
+  metrics: "Handles 100+ expense entries with instant UI updates",
+  github: "https://github.com/amarsin22/phonepe-expense-tracker",
+  live: "https://phonepe-expense-tracker.vercel.app",
+  aiExplanation:
+    "This project focuses on frontend performance and state management. While it does not use AI, it demonstrates strong UI structuring, React state handling, and real-world product-style design inspired by fintech applications."
+},
+{
+  id: 5,
+  title: "Smart Book Recommendation App",
+  description: "A modern, responsive React + TypeScript web app to search for books, view details, and mark favorites with persistent storage.",
+  longDescription:
+    "Developed a Smart Book Recommendation App using React and TypeScript that lets users search books via the Open Library API, view details, and manage favorites with a smooth, responsive UI and persistent storage using localStorage.",
+  technologies: [
+    "React.js",
+    "TypeScript",
+    "Axios / Fetch API",
+    "CSS (Flexbox, Grid, Animations)",
+    "Local Storage",
+    "Vercel"
+  ],
+  features: [
+    "Book search by title or author using the Open Library API",
+    "Add or remove favorite books with persistent storage",
+    "Filter view between all books and favorites",
+    "Responsive and interactive UI with hover effects and animations"
+  ],
+  metrics: "Searches and displays relevant book results efficiently with instant favorites toggle",
+  github: "https://github.com/amarsin22/Smart-Book-Recommendation-App",
+  live: "https://smart-book-recommendation-app.vercel.app/",
+  aiExplanation:
+    "This app uses the Open Library API to fetch book data dynamically. While it does not contain AI recommendation logic, it demonstrates real-world API integration, state management, and responsive frontend design."
+},
+{
+  id: 6,
+  title: "Freelance Services Website",
+  description: "A modern freelance services landing website with interactive sections and an AI chatbot for user engagement.",
+  longDescription:
+    "Built a responsive freelance services website using React and Vite, showcasing services like resume writing, LinkedIn optimization, interview preparation, and frontend development, along with an interactive AI-style chatbot for enhanced user interaction.",
+  technologies: [
+    "React.js",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "React Hooks",
+    "Git & GitHub"
+  ],
+  features: [
+    "Responsive single-page layout with smooth anchor navigation",
+    "Sections for Services, About, Pricing, Testimonials, and Contact",
+    "Interactive AI chatbot with voice and text support",
+    "Clean reusable React components and UI animations"
+  ],
+  metrics: "Improved user interaction experience with dynamic UI and chatbot",
+  github: "https://github.com/amarsin22/Freelance-website",
+  live: "https://freelance-website-peach.vercel.app",
+  aiExplanation:
+    "The project includes an interactive AI-style chatbot component that enhances user engagement by supporting both voice and text interactions, showcasing frontend innovations and user experience focus."
+}
   ],
 
   strengths: [
