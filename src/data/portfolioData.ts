@@ -17,7 +17,7 @@ export const portfolioData = {
     backend: ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "API Security"],
     database: ["MySQL", "MongoDB"],
     devops: ["Git", "GitHub", "Docker", "CI/CD", "Postman", "Vercel", "Render", "Netlify"],
-    ai_ml: ["OpenAI API", "LangChain", "n8n", "Prompt Engineering"],
+    ai_ml: ["OpenAI API", "LangChain", "n8n", "Prompt Engineering", "LLM", "RAG", "GENAI"],
   },
 
   experience: [
