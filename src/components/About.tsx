@@ -123,8 +123,8 @@ const About = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-6">
               {[
-                { label: "Projects", value: "3", sub: "AI-powered" },
-                { label: "Experience", value: "1+", sub: "years" },
+                { label: "Projects", value: "4", sub: "AI-powered" },
+                { label: "Experience", value: "2", sub: "months" },
                 { label: "Technologies", value: "15+", sub: "mastered" }
               ].map((stat) => (
                 <div key={stat.label} className="text-center p-3 sm:p-4 bg-white dark:bg-gray-800 rounded-xl">
