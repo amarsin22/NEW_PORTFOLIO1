@@ -182,13 +182,13 @@ const AIFeatures = () => {
               <div className="space-y-2 sm:space-y-3">
                 <div className="text-cyan-400">$ ask --skill="AI Integration"</div>
                 <div className="text-gray-300">
-                  › OpenAI API: Expert level experience
+                  › OpenAI API: Beginner to Intermediate level experience
                   <br />
                   › LangChain: Workflow orchestration
                   <br />
                   › n8n: Automation pipelines
                   <br />
-                  › 3 production AI projects
+                  › 4 production AI projects
                 </div>
                 <div className="text-cyan-400 mt-3 sm:mt-4">$ ask --project="Email Responder"</div>
                 <div className="text-gray-300">
