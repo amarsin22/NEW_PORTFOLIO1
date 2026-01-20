@@ -105,13 +105,13 @@ const Hero = () => {
                     $ ask_portfolio --skill="AI Integration"
                   </div>
                   <div className="text-gray-300 mt-2">
-                    › OpenAI API: Expert
+                    › OpenAI API: Beginner to Intermediate
                     <br />
-                    › LangChain: Advanced
+                    › LangChain: Understanding of core concepts
                     <br />
-                    › n8n: Intermediate
+                    › n8n: Beginner to Intermediate
                     <br />
-                    › Projects: 3 AI-powered apps
+                    › Projects: 4 AI-powered apps
                   </div>
                 </div>
 
